@@ -43,13 +43,14 @@ body {
 }
 
 .form-group input {
-  border: none;
+   border: none;
    background-color: transparent;
    background-repeat: no-repeat;
-  background-size: 100% 100%;
+   background-size: 100% 100%;
    height: 4em;
    color: #444;
    padding-left: 3em;
+   max-width: 30em;
 }
 
 .btn, .btn:hover, .btn:focus, .link-btn {
@@ -191,9 +192,10 @@ label {
 }
 
 .user-mail {
-   color: orange !important;
+   color: yellow !important;
    font-weight: bold;
    font-size: 1.2em !important;
+   font-family: Courier;
 }
 
 .footer {
