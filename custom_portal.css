@@ -1,0 +1,242 @@
+/*
+===============================================================================
+ This file contain extra CSS rules to customize the YunoHost user portal and
+ can be used to customize app tiles, buttons, etc...
+===============================================================================
+*/
+
+body {
+   background: #fff;
+}
+
+#ynh-logo {
+  background-image: url("./logo.png");
+  opacity: 1;
+  height: 10em;
+}
+
+.logged #ynh-logo {
+  background-image: url("./logo_small.png");
+  width: 7em;
+}
+
+.ynh-user-portal {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form .form-group {
+  background: none;
+}
+
+.login-form .form-text {
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height: 4em;
+}
+
+.form-text:hover, .form-text:focus {
+   background-color: transparent;
+   color: #000;
+}
+
+.form-group input {
+  border: none;
+   background-color: transparent;
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+   height: 4em;
+   color: #444;
+   padding-left: 3em;
+}
+
+.btn, .btn:hover, .btn:focus, .link-btn {
+	background-color: transparent;
+	background-image: url("board2_light.png");
+	background-size: 100% 100%;
+    color: #000;
+}
+.classic-btn {
+	background-image: url("board2_info.png");
+}
+
+.validate-btn {
+	background-image: url("board2_success.png");
+}
+
+.btn:hover, .btn:focus {
+    font-weight: bold;
+}
+
+.form-group input:nth-child(4n) {
+   background-image: url("paper1.png");
+}
+.form-group input:nth-child(4n+1) {
+   background-image: url("paper2.png");
+}
+.form-group input:nth-child(4n+2) {
+   background-image: url("paper3.png");
+}
+.form-group input:nth-child(4n+3) {
+   background-image: url("paper4.png");
+}
+
+.form-group:nth-child(4n) input {
+   background-image: url("paper2.png");
+}
+.form-group:nth-child(4n+1) input {
+   background-image: url("paper3.png");
+}
+.form-group:nth-child(4n+2) input {
+   background-image: url("paper4.png");
+}
+.form-group:nth-child(4n+3) input {
+   background-image: url("paper1.png");
+}
+
+
+.login-form label::before {
+   display: none;
+}
+
+.login-form .btn {
+  background-image: url("board2.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+label {
+	background: url("board1.png");
+	background-size: 100% 100%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+    padding-left: 1em;
+}
+
+.messages {
+	border-width: 15px;
+	border-style: solid;
+	border-image: url("paper5.png");
+	border-image-slice: 35 20 fill;
+    color: #000;
+    background: none !important;
+}
+	
+.listing-apps a:hover,
+.listing-apps a:focus {
+    left: inherit;
+    top: inherit;
+    box-shadow: none;
+    color: #888 !important;
+}
+.listing-apps a::before,
+.listing-apps a::after
+{
+    content: none;
+}
+
+.listing-apps li {
+    box-shadow: none;
+}
+
+.listing-apps a {
+    padding-left: 0.4em;
+}
+
+.app-tile
+{
+	background: url("papertile1.png") !important;
+	background-size: 100% 100% !important;
+    color: #222 !important;
+}
+
+.user-container {
+	background-image: url("board5.png");
+	background-size: 100% 100%;
+	height: 8em;
+	width: 25em;
+	max-width: 50%;
+	padding-left: 5.5em;
+	padding-top: 1.2em;
+    color: #fff !important;
+}
+
+.user-menu {
+	background-image: url("board2.png");
+	background-size: 100% 100%;
+    width: 10em;
+    text-align: center;
+}
+
+.user-menu a {
+    color: #eee !important;
+    font-weight: bold;
+}
+
+.user-container::before
+{
+    display: none !important;
+}
+
+.user-username {
+   font-size: 1.8em !important;
+}
+
+.user-fillname {
+   font-size: 1.5em
+}
+
+.user-mail {
+   color: orange !important;
+   font-weight: bold;
+   font-size: 1.2em !important;
+}
+
+.footer {
+	background-image: url("board3.png");
+	background-size: 100% 100%;
+    height: 3em;
+    padding: 0.5em;
+}
+
+.footer a {
+    color: #eee !important;
+    font-weight: bold;
+}
+
+.footer nav {
+    border: none !important;
+}
+
+
+.bluebg {
+    filter: sepia(100%) hue-rotate(100deg) saturate(2);
+}
+.purplebg {
+    filter: sepia(100%) hue-rotate(260deg) saturate(8);
+}
+.redbg {
+    filter: sepia(100%) hue-rotate(260deg) saturate(8);
+}
+.orangebg {
+    filter: sepia(170%) hue-rotate(-60deg) saturate(10);
+}
+.greenbg {
+    filter: sepia(170%) hue-rotate(30deg) saturate(5);
+}
+.darkbluebg {
+    filter: sepia(170%) hue-rotate(100deg) saturate(5) brightness(80%);
+}
+.lightbluebg {
+    filter: sepia(170%) hue-rotate(-10deg) saturate(5) brightness(130%);
+}
+.yellowbg {
+    filter: sepia(170%) hue-rotate(0deg) saturate(3) brightness(130%);
+}
+.lightpinkbg {
+    filter: sepia(40%) hue-rotate(-100deg) saturate(8) brightness(120%);
+}
